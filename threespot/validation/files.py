@@ -29,7 +29,7 @@ validate_image_size = partial(validate_file_size, label='image')
 
 def validate_image_dimensions(image_file, required_width, required_height):
     """
-    Validates the dimensions, raises a ValidationErrror for images
+    Validates the dimensions, raises a ValidationError for images
     that are too large.
     """
     width, height = get_image_dimensions(image_file)
